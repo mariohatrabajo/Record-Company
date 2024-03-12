@@ -1,0 +1,350 @@
+/* Hero */
+.hero {
+    height: 60vh;
+    /* Background Image */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.hero.artists {
+    background-image: url(../img/hero_artistas.jpg);
+}
+.hero.releases {
+    background-image: url(../img/hero_releases.jpg);
+}
+.hero.contact {
+    background-image: url(../img/hero_contact.jpg);
+}
+
+.main-title {
+    margin-bottom: 0;
+    text-shadow: 5px 5px 0 var(--main-color);
+}
+
+
+/* Spotify-section */
+.spotify-section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;  
+    margin-bottom: 4vh;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    /* Background Image */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.spotify-section.logic {
+    background-image: url(../img/logic_album1.jpg);
+}
+.spotify-section.rickyedit {
+    background-image: url(../img/rickyedit_cancion1.jpg);
+}
+
+.spotify-section-filter {
+    backdrop-filter: blur(6px);
+    /* Flex Box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.spotify-section.artists, .spotify-section-filter {
+    width: 100%;
+    height: 100%;
+}
+
+.spotify-section-content {
+    height: 552px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px) brightness(0.3);
+    border-radius: var(--border-radius);
+    padding: 50px;
+    box-sizing: border-box;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.spotify-section h1 {
+    font-size: 3rem;
+    width: 100%;
+    padding: 0 30px 20px 30px;
+    box-sizing: border-box;
+}
+
+iframe.spotify, img.spotify {
+    border-radius: var(--border-radius);
+    width: 100%;
+    display: block;
+}
+
+iframe.spotify {
+    flex: 1;
+}
+
+img.spotify {
+    display: none;
+}
+
+/* ---- Artists Section */
+.card-section {
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.card {
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    /* Background Image */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    overflow: hidden;
+    /* box-shadow: 15px 15px 0 var(--main-color); */
+}
+
+.card.logic {
+    background-image: url(../img/logic1.jpg);
+}
+.card.rickyedit {
+    background-image: url(../img/rickyedit.jpg);
+}
+.card.trueno {
+    background-image: url(../img/trueno1.jpg);
+}
+.card.rakkyripper {
+    background-image: url(../img/rakkyripper1.jpg);
+}
+.card.bnet {
+    background-image: url(../img/bnet1.jpg);
+}
+.card.natosywaor {
+    background-image: url(../img/natosywaor1.jpg);
+}
+
+.card-filter {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px) brightness(0.7);
+    transition: all 500ms ease;
+    opacity: 0;
+}
+.card:hover .card-filter {
+    opacity: 1;
+}
+
+/* Card rrss */
+.card-filter {
+    padding: 50px;
+    box-sizing: border-box;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.card-filter .rrss {
+    width: 100%;
+    /* Flex Box */
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-filter .rrss a {
+    text-shadow: 0 0 3px black;
+    flex: 0 0 33.33%;
+    margin-top: 20px;
+    border-bottom: 1px solid transparent;
+}
+
+.card-filter .rrss a img {
+    width: 40px;
+}
+
+.pre-section-title {
+    padding-top: 5vh;
+    padding-left: 110px;
+    margin-bottom: -5vh;
+    /* Flex Box */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+/* Albumes */
+.card-section#albums {
+    min-height: unset;
+}
+
+.card.album {
+    min-height: 50vh; 
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 5px 5px 0 var(--main-color);
+}
+
+.card.album .card-filter {
+    opacity: 1;
+}
+
+.album-cover {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.card.album h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card.album a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    margin-bottom: -20px;
+}
+.card.album a:hover {
+    text-decoration: underline;
+}
+
+.card.album h3>a:hover {
+    text-decoration: none;
+}
+
+.title-section {
+    height: 40vh;
+    /* Flex Box */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-section h1 {
+    margin-left: 100px;
+    font-size: 5rem;
+}
+
+/* Contact */
+form {
+    width: 100%;
+    height: 100%;
+    /* Flex Box */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "Halvarbreit", sans-serif;
+    outline: none;
+    padding-bottom: .5rem;
+}
+
+input[type=submit] {
+    border: none;
+    font-family: granesta;
+    font-size: 2rem;
+    text-shadow: 5px 5px 0 var(--main-color);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+input[type=submit]:hover {
+    text-shadow: none;
+    color: var(--main-color);
+}
+
+.location {
+    width: 100%;
+    height: 60vh;
+    padding: 6rem;
+    box-sizing: border-box;
+}
+
+.location iframe, .location .iframe-container {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 15px 15px 0 var(--main-color);
+}
+
+@media screen and (max-width: 1000px){
+    .card {
+        grid-column: span 3;
+    }
+
+    .pre-section-title {
+        margin-bottom: -1rem;
+    }
+
+    .spotify-section {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .pre-section-title {
+        padding-left: 30px;
+    }
+    
+    .card {
+        grid-column: span 6;
+        height: 70vh;
+    }
+
+    .card.album {
+        height: auto;
+    }
+
+    .location {
+        padding: 1.5rem;
+    }
+
+    .spotify-section h1 {
+        font-size: 2.8rem;
+    }
+
+    iframe.spotify {
+        display: none;
+    }
+
+    img.spotify {
+        display: block;
+    }
+}
